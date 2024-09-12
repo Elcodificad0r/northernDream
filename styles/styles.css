@@ -1,0 +1,322 @@
+/* poppins-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* poppins-italic - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/poppins-v21-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* montserrat-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v26-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* montserrat-800italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 800;
+    src: url('../fonts/montserrat-v26-latin-800italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* montserrat-900italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 900;
+    src: url('../fonts/montserrat-v26-latin-900italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* unna-italic - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Unna';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/unna-v23-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* pixelify-sans-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Pixelify Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/pixelify-sans-v1-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+:root {
+    --orange: hsl(31,65%,53%);
+    --yellow: hsl(36,89%,62%);
+    --green:  hsl(79,58%,27%);
+    --white:  hsl(37,28%,85%);
+    --black:  hsl(312,9%,11%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    background-color: var(--white);
+}
+
+body {
+    font-family: 'Poppins', 'Montserrat', Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 100vh;
+}
+
+h1,
+h2,
+h3{
+    margin: 0;
+}
+
+button{
+    font-family: inherit;
+}
+
+header nav{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 65px 0px 65px;
+}
+
+.hamburger{
+    display: none;
+}
+
+@media (max-width: 860px) {
+    nav ul li {
+      display: none; /* Oculta el segundo y tercer elemento del menú */
+    }
+
+    .nav-socials a {
+        display: none;
+    }
+
+    .hamburger {
+      display: block; /* Muestra el icono de menú de hamburguesa */
+      cursor: pointer;
+      align-self: center;
+    }
+
+  }
+
+.nav-img{
+    display: flex;
+    align-self: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 31px;
+    align-self: center;
+    padding-right: 40px;
+}
+
+header nav ul li{
+    list-style: none;
+    list-style-type: none;
+}
+
+.nav-buttons{
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+header nav ul li a:hover{
+    color: var(--orange);
+}
+
+.nav-socials a{
+    padding: 15px;
+}
+
+.nav-socials{
+    display: flex;
+    align-self: center;
+}
+
+.nav-socials img:hover{
+    mix-blend-mode:exclusion;
+    border-radius: 5px;
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-title{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15%;
+}
+
+.main-title-text{
+    font-size: 8rem;
+    font-family: 'unna';
+    font-weight: 400;
+    line-height: 0.7;
+}
+
+.main-title-second-text{
+    font-size: 7.5rem;
+    font-family: 'montserrat';
+    font-style: italic;
+    font-weight: 800;
+    line-height: 0.8;
+}
+
+.main-title-third-text{
+    font-size: 2rem;
+    font-family: 'poppins';
+    font-style: italic;
+    font-weight: 400;
+}
+
+.main-spline{
+    width: 50%;
+} 
+
+spline-viewer{
+    visibility: hidden;
+}
+
+@media (max-width: 1500px){
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+
+.main-title{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 15%;
+    padding-left: 0%;
+    }
+
+    .main-spline{
+        width: 300px;
+        margin: -20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    } 
+}
+
+@media (max-width: 1600px) {
+    .main-spline {
+        scale: 0.5;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+}
+
+.services-container-section{
+    height: 70vh;
+    background-color: #536e1e;
+    border-radius: 100px;
+    margin: 50px;
+    box-shadow: #E4DCCE 4px 4px 0 0,#1F1A1E 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.container-services2{
+    padding-left: 120px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.services-buttons {
+    .services-buttons{
+        width: 50%;
+        height: 100%;
+        font-size: 2vh;
+        font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+        .branding-service { grid-area: 3 / 3 / 5 / 6; }
+        .comercial-service { grid-area: 3 / 8 / 5 / 11; }
+        .musicvids-service { grid-area: 6 / 2 / 8 / 5; }
+        .foto-service { grid-area: 6 / 7 / 8 / 10; }
+        .digitalcontent-service { grid-area: 9 / 5 / 11 / 8; }
+
+
+.services-btn{
+    padding: 50px;
+    background-color: #D58936;
+    border: 2px solid #1F1A1E;
+    box-shadow:#1F1A1E 4px 4px 0 1px;
+    border-radius: 100px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding:10 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: transform 0.5s ease;
+}
+
+.services-btn:hover{
+    transform: rotate(10deg);
+}
+
+
