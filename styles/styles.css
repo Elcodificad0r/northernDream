@@ -212,7 +212,7 @@ spline-viewer{
     visibility: hidden;
 }
 
-@media (max-width: 1500px){
+@media (max-width: 760px){
     .main-container{
         display: flex;
         flex-direction: column;
