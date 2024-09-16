@@ -90,7 +90,7 @@ button{
     font-family: inherit;
 }
 
-header nav{
+header nav {
     font-size: 1rem;
     line-height: 1.5;
     font-weight: 400;
@@ -99,28 +99,14 @@ header nav{
     padding: 30px 65px 0px 65px;
 }
 
-.hamburger{
+.hamburger {
     display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
-@media (max-width: 860px) {
-    nav ul li {
-      display: none; /* Oculta el segundo y tercer elemento del menú */
-    }
-
-    .nav-socials a {
-        display: none;
-    }
-
-    .hamburger {
-      display: block; /* Muestra el icono de menú de hamburguesa */
-      cursor: pointer;
-      align-self: center;
-    }
-
-  }
-
-.nav-img{
+.nav-img {
     display: flex;
     align-self: center;
 }
@@ -133,38 +119,106 @@ header nav ul {
     padding-right: 40px;
 }
 
-header nav ul li{
+header nav ul li {
     list-style: none;
-    list-style-type: none;
 }
 
-.nav-buttons{
+.nav-buttons {
     display: flex;
     justify-content: flex-start;
     align-self: center;
 }
 
-header nav ul li a{
+header nav ul li a {
     text-decoration: none;
     color: var(--black);
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
     color: var(--orange);
 }
 
-.nav-socials a{
+.nav-socials a {
     padding: 15px;
 }
 
-.nav-socials{
+.nav-socials {
     display: flex;
     align-self: center;
 }
 
-.nav-socials img:hover{
-    mix-blend-mode:exclusion;
+.nav-socials img:hover {
+    mix-blend-mode: exclusion;
     border-radius: 5px;
+}
+
+.offcanvas-body {
+    background-color: var(--green); /* Verde olivo */
+    color: var(--white);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.offcanvas-body a {
+    color: var(--white);
+    font-size: 3rem; /* Tipografía más grande */
+    font-weight: 700; /* Tipografía más gruesa */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    text-decoration: none;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.offcanvas-body a:hover {
+    color: var(--orange);
+}
+
+.offcanvas-body ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px; /* Separación entre los enlaces */
+}
+
+.offcanvas-body ul li {
+    list-style: none;
+}
+
+/* Hacer que el menú ocupe toda la pantalla */
+.offcanvas-fullscreen {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Media query para pantallas menores de 600px */
+@media (max-width: 600px) {
+    .offcanvas-body a {
+        font-size: 2.5rem; /* Tamaño del texto más pequeño para pantallas móviles */
+    }
+
+    header nav ul li {
+        display: none; /* Oculta los elementos del menú */
+    }
+
+    .nav-socials a {
+        display: none;
+    }
+
+    .hamburger {
+        display: block; /* Muestra el icono de menú de hamburguesa */
+        cursor: pointer;
+        align-self: center;
+    }
+
+    /* Centra el menú */
+    .offcanvas-body ul {
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .main-container {
