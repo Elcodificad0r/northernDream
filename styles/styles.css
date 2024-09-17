@@ -90,6 +90,10 @@ p{
     margin-bottom: 0px;
 }
 
+ul{
+    margin: 0px;
+}
+
 button{
     font-family: inherit;
 }
@@ -110,6 +114,13 @@ header nav {
     cursor: pointer;
 }
 
+.btn-close-large{
+    height: 2rem;
+    width: 2rem;
+    background-size: 1.5rem;
+}
+
+
 .nav-img {
     display: flex;
     align-self: center;
@@ -127,10 +138,10 @@ header nav ul li {
     list-style: none;
 }
 
-.nav-buttons {
+.nav-buttons{
     display: flex;
     justify-content: flex-start;
-    align-self: center;
+    align-items: center;
 }
 
 header nav ul li a {
@@ -168,9 +179,9 @@ header nav ul li a:hover {
 
 .offcanvas-body a {
     color: var(--white);
-    font-size:5rem; /* Tipografía más grande */
-    font-weight: 700; /* Tipografía más gruesa */
-    text-transform: uppercase; /* Texto en mayúsculas */
+    font-size:5rem; 
+    font-weight: 700; 
+    text-transform: uppercase; 
     text-decoration: none;
     margin: 10px 0;
     text-align: center;
@@ -185,7 +196,7 @@ header nav ul li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 30px; /* Separación entre los enlaces */
+    gap: 0px;
 }
 
 .offcanvas-body ul li {
@@ -768,3 +779,102 @@ footer span {
         height: 8rem;
     }
 }
+
+/* INICIA CSS CONTACT US PAGE */
+
+.contact-main-container{
+    width: 100%;
+    height: 100%;
+    padding: 50px 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.contact-main-form{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-main-form-title{
+    font-size: 1.5rem;
+}
+/* .contact-main-form-buttons{
+    width: 100%;
+    font-size: 1rem;
+} */
+
+.contact-main-form-buttons-flex{
+    padding-right: 20%;
+    width: 85%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    flex-wrap: wrap;
+    column-gap: 55px;
+}
+
+.contact-main-form-buttons-flex:nth-child(5){
+    margin: 50px;
+}
+.contact-main-submit{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Estilos del switch */
+
+.form-check {
+    width: 160px;
+}
+
+#flexSwitchCheckDefault{}
+
+.form-check-input {
+    width: 50px;
+    /* height: 25px; */
+    background-color: var(--green);
+    border-radius: 50px;
+    position: relative;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Posición de la palanca */
+  .form-check-input:before {
+    /* content: ''; */
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--green);
+    border-radius: 50%;
+    top: 50%;
+    left: 4px;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Cambiar a gris cuando está desactivado */
+  .form-check-input:not(:checked) {
+    background-color: #ccc;
+  }
+  
+  /* Cambiar a verde cuando está activado */
+  .form-check-input:checked {
+    background-color: green;
+  }
+  
+  /* Cambiar la posición de la palanca cuando está activado */
+  .form-check-input:checked:before {
+    transform: translateY(-50%) translateX(25px);
+  }
