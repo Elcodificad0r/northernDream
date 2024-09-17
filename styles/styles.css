@@ -86,6 +86,10 @@ h3{
     margin: 0;
 }
 
+p{
+    margin-bottom: 0px;
+}
+
 button{
     font-family: inherit;
 }
@@ -164,7 +168,7 @@ header nav ul li a:hover {
 
 .offcanvas-body a {
     color: var(--white);
-    font-size: 3rem; /* Tipografía más grande */
+    font-size:5rem; /* Tipografía más grande */
     font-weight: 700; /* Tipografía más gruesa */
     text-transform: uppercase; /* Texto en mayúsculas */
     text-decoration: none;
@@ -194,13 +198,24 @@ header nav ul li a:hover {
     height: 100% !important;
 }
 
+.btn-close-white {
+    filter: invert(1); /* Cambia el color del botón de cierre a blanco */
+}
+
+/* Posiciona el botón de cierre a la derecha */
+.offcanvas-header {
+    display: flex;
+    justify-content: flex-end; /* Posiciona el botón a la derecha */
+    padding: 15px;
+}
+
 /* Media query para pantallas menores de 600px */
 @media (max-width: 600px) {
     .offcanvas-body a {
-        font-size: 2.5rem; /* Tamaño del texto más pequeño para pantallas móviles */
+        font-size: 4rem; /* Tamaño del texto más pequeño para pantallas móviles */
     }
 
-    header nav ul li {
+    .nav-buttons {
         display: none; /* Oculta los elementos del menú */
     }
 
@@ -212,6 +227,10 @@ header nav ul li a:hover {
         display: block; /* Muestra el icono de menú de hamburguesa */
         cursor: pointer;
         align-self: center;
+    }
+
+    #navbar-hamburger{
+        padding-right: 0px;
     }
 
     /* Centra el menú */
@@ -480,8 +499,7 @@ spline-viewer {
 
     .services-text {
         margin-top: 100px;
-        margin-bottom: 40px;
-        padding: 20px;
+        padding: 20px 0px 0px 0px;
         font-size: 4rem;
         color: var(--white);
         font-family: "Montserrat", sans-serif;
@@ -493,6 +511,7 @@ spline-viewer {
 /* Responsividad para el grid */
 @media (max-width: 960px) {
     .services-buttons {
+        padding-left: 15px;
         font-size: 2rem;
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
@@ -514,6 +533,7 @@ spline-viewer {
         #digitalmedia-service { grid-area: 9 / 5 / 11 / 8; }
         .services-buttons-btn {
             padding: 35px 50px 35px 50px;
+            margin-bottom: 0px;
             background-color: #D58936;
             border: 2px solid #1F1A1E;
             box-shadow: #1F1A1E 4px 4px 0 1px;
@@ -531,6 +551,7 @@ spline-viewer {
         }
         .services-buttons-btn2 {
             padding: 35px 50px 35px 50px;
+            margin-bottom: 0px;
             background-color: #D58936;
             border: 2px solid #1F1A1E;
             box-shadow: #1F1A1E 4px 4px 0 1px;
@@ -545,6 +566,10 @@ spline-viewer {
             width: 100%;
             max-width: 200px;
             transform: rotate(-10deg)
+        }
+
+        p{
+            margin-bottom: 0px;
         }
         
         /* Hover de los botones */
@@ -561,6 +586,7 @@ spline-viewer {
 
 @media (max-width: 600px) {
     .services-buttons {
+        padding-left: 15px;
         font-size: 1rem;
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
@@ -582,7 +608,7 @@ spline-viewer {
         #digitalmedia-service { grid-area: 9 / 5 / 11 / 8; }
 
 .services-buttons-btn {
-    padding: 35px 50px 35px 50px;
+    padding: 35px 60px 35px 60px;
     background-color: #D58936;
     border: 2px solid #1F1A1E;
     box-shadow: #1F1A1E 4px 4px 0 1px;
@@ -599,7 +625,7 @@ spline-viewer {
     transform: rotate(10deg)
 }
 .services-buttons-btn2 {
-    padding: 35px 50px 35px 50px;
+    padding: 35px 60px 35px 60px;
     background-color: #D58936;
     border: 2px solid #1F1A1E;
     box-shadow: #1F1A1E 4px 4px 0 1px;
@@ -614,6 +640,10 @@ spline-viewer {
     width: 100%;
     max-width: 200px;
     transform: rotate(-10deg)
+}
+
+p{
+    margin-bottom: 0px;
 }
 
 /* Hover de los botones */
