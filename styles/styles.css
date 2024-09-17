@@ -95,7 +95,13 @@ ul{
 }
 
 button{
+    background-color: var(--green);
     font-family: inherit;
+}
+
+.btn{
+    background-color: var(--green);
+    border: none;
 }
 
 header nav {
@@ -819,9 +825,6 @@ footer span {
     column-gap: 55px;
 }
 
-.contact-main-form-buttons-flex:nth-child(5){
-    margin: 50px;
-}
 .contact-main-submit{
     width: 30%;
     height: 100%;
@@ -833,14 +836,39 @@ footer span {
 /* Estilos del switch */
 
 .form-check {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 20px;
+    /* row-gap: 20px; */
     width: 160px;
 }
 
-#flexSwitchCheckDefault{}
+#flexSwitchCheckDefault{
+    /* background-color: var(--green); */
+    width: 50px;
+}
+
+#flexSwitchCheckDefault2{
+    /* background-color: var(--green); */
+    width: 50px;
+}
+#flexSwitchCheckDefault3{
+    /* background-color: var(--green); */
+    width: 50px;
+}
+#flexSwitchCheckDefault4{
+    /* background-color: var(--green); */
+    width: 50px;
+}
+#flexSwitchCheckDefault5{
+    /* background-color: var(--green); */
+    width: 50px;
+}
 
 .form-check-input {
     width: 50px;
-    /* height: 25px; */
+    height: 25px;
     background-color: var(--green);
     border-radius: 50px;
     position: relative;
@@ -871,7 +899,7 @@ footer span {
   
   /* Cambiar a verde cuando está activado */
   .form-check-input:checked {
-    background-color: green;
+    background-color: var(--green);
   }
   
   /* Cambiar la posición de la palanca cuando está activado */
