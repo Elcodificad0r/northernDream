@@ -832,12 +832,17 @@ footer span {
     flex-wrap: wrap;
 }
 
+.input-group{
+    width: 300px;
+    display: flex;
+    flex-wrap: nowrap;
+}
 
 #floatingInput{
     background-color: hsla(80, 58%, 27%, 0.391);;
     border-radius: 50px;
     padding: 10px;
-    width: 400px;
+    width: 300px;
 }
 
 #floatingInput2{
@@ -862,10 +867,18 @@ footer span {
 #floatingTextarea2{
     background-color: hsla(80, 58%, 27%, 0.391);;
     border-radius: 20px;
+    height: 700px;
+    width: 39rem;
 }
 
 #contact-main-submit-text{
     text-align: justify;
+}
+
+.text-form{
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
 }
 
 .contact-main-form-emptybox{
@@ -1026,7 +1039,7 @@ footer span {
 
 /* @media (max-width:){} */
 
-@media (max-width: 600px){
+@media (max-width: 768px){
     .contact-main-container{
         width: 100%;
         height: 100%;
@@ -1051,7 +1064,7 @@ footer span {
     }
 
     .contact-main-form-buttons-flex{
-        padding-right: 15%;
+        padding-right: 0px;
         margin-bottom: 10px;
         width: 100%;
         column-gap: 70px;
@@ -1081,15 +1094,26 @@ footer span {
         width: 300px;
     }
 
-
-    #floatingInput2{
-        width: 100px;
+    .form-floating{
+        display: flex;
+        justify-content: center;
     }
 
+
+    #floatingInput2{
+        width: 13rem;
+    }
+    
+    #text-form{
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+    }
 
     .contact-main-submit{
         padding-top: 20px;
         width: 100%;
     
     }
+
 }
