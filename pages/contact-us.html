@@ -63,35 +63,97 @@
                     <p>Servicios:</p>
                 </div>
                 <div class="contact-main-form-buttons-flex">
-                    <div class="form-check form-switch">
+                    <div class="form-check form-switch" id="form-check">
                     <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
                     <label class="form-check-label" for="flexSwitchCheckDefault">Branding</label>
                   </div>
-                  <div class="form-check form-switch">
+                  <div class="form-check form-switch" id="form-check">
                     <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault2">
                     <label class="form-check-label" for="flexSwitchCheckDefault2">Video musical</label>
                   </div>
-                  <div class="form-check form-switch">
+                  <div class="form-check form-switch" id="form-check">
                     <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault3">
                     <label class="form-check-label" for="flexSwitchCheckDefault3">Publicidad</label>
                   </div>
-                  <div class="form-check form-switch">
+                  <div class="form-check form-switch" id="form-check">
                     <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault4">
                     <label class="form-check-label" for="flexSwitchCheckDefault4">Digital media</label>
                   </div>
-                  <div class="form-check form-switch">
+                  <div class="form-check form-switch" id="form-check">
                     <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault5">
                     <label class="form-check-label" for="flexSwitchCheckDefault5">Fotografía</label>
                   </div>
                 </div>
+            
+                <div class="contact-main-form-title">
+                    <p>Nombre y e-mail:</p>
+                </div>
+                
+                <div class="contact-main-form-emptybox">
+                    <div class="form-floating mb-3" id="form-floating">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Nombre">
+                        <label for="floatingInput">Nombre</label>
+                      </div>
+                    <div class="form-floating mb-3" id="form-floating">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                      </div> 
+                </div>
+
+                <div class="contact-main-form-title">
+                    <p>Fecha y presupuesto:</p>
+                </div>
+                
+                <div class="contact-main-form-emptybox">
+                    <div class="form-floating mb-3" id="form-floating">
+                        <input type="month" class="form-control" id="floatingInput" placeholder="Nombre">
+                        <!-- <label for="floatingInput">Fecha</label> -->
+                      </div>
+                      <div class="input-group">
+                        <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" id="floatingInput2">
+                        <span class="input-group-text" id="floatingInput3">$</span>
+                        <span class="input-group-text" id="floatingInput4">MXN</span>
+                      </div>
+                </div>
+
+                <div class="contact-main-form-title">
+                    <p>Describe tu proyecto:</p>
+                </div>
+                
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Comments</label>
+                  </div>
+
+                <div class="contact-main-form-title">
+                    <p>*Elige 2 opciones:</p>
+                </div>
+
+                <div class="contact-main-form-buttons-flex">
+                    <div class="form-check form-switch" id="form-check">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Calidad</label>
+                  </div>
+                  <div class="form-check form-switch" id="form-check">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault2">
+                    <label class="form-check-label" for="flexSwitchCheckDefault2">Entrega express</label>
+                  </div>
+                  <div class="form-check form-switch" id="form-check">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault3">
+                    <label class="form-check-label" for="flexSwitchCheckDefault3">Bajo presupuesto</label>
+                  </div>
+                </div>
+                
+
+
             </div>
             <div class="contact-main-submit">
                 <div class="contact-main-submit-box">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, aliquid tempore ad fuga eveniet eos corrupti ducimus voluptatem ipsa voluptas recusandae. Voluptatibus quis nihil consequatur quasi facere tempore mollitia maiores.</p>
-                <button type="button" class="btn btn-primary btn-lg">SUBMIT</button>
+                    <p id="contact-main-submit-text">En cualquier proyecto, puedes elegir dos de tres: rápido, barato o de calidad. Si es rápido y barato, la calidad puede bajar; si es barato y de calidad, tomará más tiempo; y si es rápido y de calidad, costará más. ¡Es cuestión de encontrar el equilibrio que mejor se ajuste a tus necesidades!</p>
+                <button type="button" class="btn btn-primary btn-lg" id="contact-main-submit-button">SUBMIT</button>
                 </div>
             </div>
-        </div>
+        </div>        
     </main>
 
 
