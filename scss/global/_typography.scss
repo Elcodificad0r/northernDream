@@ -1,0 +1,37 @@
+@use '../util/functions' as u;
+
+
+h1{
+    font-size: 8rem;
+    font-family: 'unna', Georgia, 'Times New Roman', Times, serif; 
+    font-weight: 400;
+    font-style: italic;
+    line-height: 0.7;
+    font-size: clamp(u.rem(80), 0.5882352941176467rem + 11.76470588235294vw, u.rem(140));
+}
+
+h2{
+    font-size: 7.5rem;
+    font-family: 'montserrat', Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 0.8;
+    font-size: clamp(u.rem(70), 0.6985294117647061rem + 9.803921568627452vw, u.rem(120));
+}
+
+h3{
+    font-size: 2rem;
+    font-family: 'poppins', Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-size: clamp(u.rem(24), 0.9117647058823529rem + 1.5686274509803921vw, u.rem(32));
+    word-wrap: break-word;
+}
+
+p, body{
+    font-size: 1rem;
+    font-family: 'poppins', Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}

@@ -1,0 +1,282 @@
+@use '../util' as u;
+
+footer{
+    height: 30vh;
+}
+
+
+.logo-footer {
+    margin: 20px 0px 0px 55px;
+    height: 24vh;
+}
+
+.vaquero-footer{
+    margin: 0px 0px 0px 0px;
+    height: 34vh;
+
+}
+
+
+footer {
+    ul{
+    padding-left: 0px;
+    margin: 45px;
+    list-style-type: none;
+    text-decoration: none;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    
+    li{
+        a{
+            list-style-type: none;
+            text-decoration: none;
+            font-family: "Poppins", sans-serif;
+            color:#1F1A1E
+        }
+    }
+    }
+}
+
+
+.footer-privacidad {
+    text-decoration: none;
+}
+
+.footer-terminos {
+    text-decoration: none;
+
+}
+
+.footer-contacto {
+    text-decoration: none;
+}
+
+.footer-social-icons{
+    margin: 45px;
+    height: 4vh;
+    width: 50%;
+    width: 15%;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.footer-social-icons {
+    img:hover {
+    
+        background-color: var(--white);
+        mix-blend-mode:exclusion;
+        border-radius: 5px;
+    }
+}
+
+
+footer {
+    span {
+        margin: 45px;
+        font-family: "Poppins", sans-serif;
+        color:#1F1A1E
+    }
+}
+
+.derechos-foto {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vaquero-footer1 {
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 900px) {
+    .footer-container-logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo-footer{
+        height: 10rem;
+        margin: 40px 0px
+    }
+
+    footer {
+        div{
+            ul {
+                margin: 50px 0px;
+                width: 100%;
+                row-gap: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+            }
+        }
+    }
+
+    .footer-social-icons{
+        margin: 45px 0px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .derechos-foto{
+        font-size: .8rem;
+    }
+
+    .vaquero-footer{
+        height: 8rem;
+    }
+}
+
+// FOOTER VERSION NEGATIVO
+
+
+
+.logo-footer {
+    margin: 20px 0px 0px 55px;
+    padding: 20px 0px;
+    height: 24vh;
+}
+
+.vaquero-footer{
+    margin: 0px 0px 0px 0px;
+    height: 34vh;
+
+}
+
+
+.black-footer {
+    background-color: var(--black);
+    margin-top: 0;
+    height: 65vh;
+
+        ul{
+        padding-left: 0px;
+        margin: 45px;
+        list-style-type: none;
+        text-decoration: none;
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        
+            li{
+                a{
+                    list-style-type: none;
+                    text-decoration: none;
+                    font-family: "Poppins", sans-serif;
+                    color: var(--white)
+                }
+
+                a:hover{
+                    color: var(--orange);
+                    transition: 200ms;
+                }
+            }
+        }
+}
+
+
+.footer-privacidad {
+    text-decoration: none;
+}
+
+.footer-terminos {
+    text-decoration: none;
+
+}
+
+.footer-contacto {
+    text-decoration: none;
+}
+
+.black-footer-social-icons{
+    margin: 45px;
+    height: 4vh;
+    width: 50%;
+    width: 15%;
+    display: flex;
+    justify-content: space-between; 
+
+    img {
+        filter: invert(1);
+    }
+}
+
+.footer-social-icons {
+    img:hover {
+    
+        background-color: var(--white);
+        mix-blend-mode:exclusion;
+        border-radius: 5px;
+    }
+}
+
+
+.black-footer {
+    span {
+        margin: 45px;
+        font-family: "Poppins", sans-serif;
+        color: var(--white)
+    }
+}
+
+.derechos-foto {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vaquero-footer1 {
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 900px) {
+    .footer-container-logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo-footer{
+        height: 10rem;
+        margin: 40px 0px
+    }
+
+    footer {
+        div{
+            ul {
+                margin: 50px 0px;
+                width: 100%;
+                row-gap: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+            }
+        }
+    }
+
+    .footer-social-icons{
+        margin: 45px 0px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        
+    
+    }
+
+    .derechos-foto{
+        font-size: .8rem;
+    }
+
+    .vaquero-footer{
+        height: 8rem;
+    }
+}

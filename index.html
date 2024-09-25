@@ -6,56 +6,59 @@
     <title>Northern Dream HOME</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="scss/styles.css">
 </head>
 <body>
-    <header>
-        <nav class="d-flex flex-row justify-content-between align-items-center">
-            <a class="nav-img" href="">
-                <img src="img/Northern Dream Centrado Negro no descriptor.png" width="117" height="50" alt="Northern Logo">
-            </a>
-
-            <div class="nav-buttons">
-                <ul>
-                    <li><a href="pages/work.html">WORK</a></li>
-                    <li><a href="pages/about-us.html">ABOUT US</a></li>
-                    <li><a href="pages/contact-us.html">CONTACT</a></li>
-                    <li><a href="pages/faq.html">FAQ</a></li>
-                </ul>
-            </div>
-
-            <div class="nav-socials">
-                <a href="">
-                    <img src="img/icons8-instagram.svg" width="38" height="38" alt="instagram"></a>
-                <a href="">
-                    <img src="img/icons8-youtube.svg" width="38" height="38" alt="youtube"></a>
-                <a href="">
-                    <img src="img/icons8-linkedin.svg" width="38" height="38" alt="linkedin"></a>
-            </div>
-
-            <!-- Hamburger Menu Button -->
-            <button class="hamburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
-                <img src="img/icons8-hamburger-menu.svg" alt="Hamburger Menu">
-            </button>
-
-            <!-- Offcanvas Menu -->
-            <div class="offcanvas offcanvas-start offcanvas-fullscreen" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
-                <div class="offcanvas-body">
-                    <button type="button" class="btn-close btn-close-white btn-close-large ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    <!-- Menu items -->
-                    <ul class="navbar-nav" id="navbar-hamburger">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/work.html">Work</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/about-us.html">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/contact-us.html">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/faq.html">FAQ</a></li>
+    <header class="header">
+        <div class="header__wrapper">
+            <nav class="d-flex flex-row justify-content-between align-items-center header__wrapper">
+                <a class="header__logo" href="">
+                    <img src="img/Northern Dream Centrado Negro no descriptor.png" width="117" height="50" alt="Northern Logo">
+                </a>
+    
+                <div class="nav-buttons">
+                    <ul>
+                        <li><a href="pages/work.html">WORK</a></li>
+                        <li><a href="pages/about-us.html">ABOUT US</a></li>
+                        <li><a href="pages/contact-us.html">CONTACT</a></li>
+                        <li><a href="pages/faq.html">FAQ</a></li>
                     </ul>
                 </div>
-            </div>
-        </nav>
+    
+                <div class="nav-socials">
+                    <a href="">
+                        <img src="img/icons8-instagram.svg" width="38" height="38" alt="instagram"></a>
+                    <a href="">
+                        <img src="img/icons8-youtube.svg" width="38" height="38" alt="youtube"></a>
+                    <a href="">
+                        <img src="img/icons8-linkedin.svg" width="38" height="38" alt="linkedin"></a>
+                </div>
+    
+                <!-- Hamburger Menu Button -->
+                <button class="hamburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                    <img src="img/icons8-hamburger-menu.svg" alt="Hamburger Menu" >
+                </button>
+    
+                <!-- Offcanvas Menu -->
+                <div class="offcanvas offcanvas-start offcanvas-fullscreen" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+                    <div class="offcanvas-body">
+                        <button type="button" class="btn-close btn-close-white btn-close-large ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <!-- Menu items -->
+                        <ul class="navbar-nav" id="navbar-hamburger">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/work.html">Work</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/about-us.html">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/contact-us.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="main-container">
+        <section class="main-container main__wrapper">
             <div class="main-title">
                 <h1 class="main-title-text">Sueño</h1>
                 <h2 class="main-title-second-text">Norteño</h2>
@@ -68,28 +71,34 @@
         </section>
 
 
-        <div class="services-container">
+        <section>
 
-            <!-- DIV para nombre "servicios" -->
-            <div class="services-container2">
-        
-                <!-- DIV para los botones de servicios -->
-                <div class="services-buttons">
-                    <div id="branding-service" class="services-buttons-btn"><p>Branding</p></div>
-                    <div id="comercial-service" class="services-buttons-btn2"><p>Comerciales</p></div>
-                    <div id="musicvids-service" class="services-buttons-btn"><p>Videos Musicales</p></div>
-                    <div id="foto-service" class="services-buttons-btn2"><p>Fotografía</p></div>
-                    <div id="digitalmedia-service" class="services-buttons-btn"><p>Contenido digital</p></div>
-        
-                </div>
-        
-                <div class="services-text-container">
-                    <p class="services-text">Servicios</p>
-        
-                </div>
-        
-        </div>
-        </div>
+            <img class="services-container-img" src="img/image globe pixel 1.svg" alt="" width="127px">
+            <div class="services-container">
+
+                <!-- DIV para nombre "servicios" -->
+                <div class="services-container2">
+            
+                    <!-- DIV para los botones de servicios -->
+                    <div class="services-buttons" id="grid">
+                        <div id="branding-service" class="services-buttons-btn"><p>Branding</p></div>
+                        <div id="comercial-service" class="services-buttons-btn2"><p>Comerciales</p></div>
+                        <div id="musicvids-service" class="services-buttons-btn"><p>Videos Musicales</p></div>
+                        <div id="foto-service" class="services-buttons-btn2"><p>Fotografía</p></div>
+                        <div id="digitalmedia-service" class="services-buttons-btn"><p>Contenido digital</p></div>
+            
+                    </div>
+            
+                    <div class="services-text-container">
+                        <h2 class="services-text">Servicios</h2>
+            
+                    </div>
+            
+            </div>
+            </div>
+
+            <img class="services-container-img2" src="img/image megafono pixel 2.svg" alt="" width="127px" height="">
+        </section>
         
         <!-- ACABA contenedor de servicios Home page -->
             </main>
@@ -97,10 +106,10 @@
             <footer>
         
                 <div class="footer-container-logo">
-                    <img class="logofooter" src="img/Logo Northern COMPLETO con imagen alineado izq.png" alt="">
+                    <img class="logo-footer" src="img/Logo Northern COMPLETO con imagen alineado izq.png" alt="">
                 </div>
         
-                <div class="footerlist">
+                <div class="footer-list">
                     <ul>
                         <li class="footerprivacidad"><a href="">Política de privacidad</a></li>
                         <li class="footerterminos"><a href="">Terminos y condiciones</a></li>
@@ -109,7 +118,7 @@
                 
                 </div>
         
-                <div class="footersocialicons">
+                <div class="footer-social-icons">
                     <a href="">
                         <img src="img/icons8-instagram.svg" width="38" height="38" alt="instagram"></a>
                     <a href="">
@@ -125,8 +134,8 @@
                     </div>
         
         
-                    <div class="vaquerofooter1">
-                        <img class="vaquerofooter" src="img/Vaquero.png" alt="">
+                    <div class="vaquero-footer1">
+                        <img class="vaquero-footer" src="img/Vaquero.png" alt="">
                     </div>
             
                 </div>

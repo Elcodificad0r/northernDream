@@ -1,0 +1,412 @@
+@use '../util' as u;
+
+// first section
+.main{
+    &__wrapper{
+        width: min-max(100% - u.rem(32), u.rem(1440));
+        margin-inline: auto;
+    }
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-title {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+}
+
+.main-spline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 70vh;
+}
+
+spline-viewer {
+    visibility: hidden;
+}
+
+// second section
+
+/* Sección de servicios */
+
+.services-container-img{
+    translate: 70px 60px;
+    transform: rotate(-10deg);
+}
+
+.services-container-img2{
+    translate: 1090px -60px;
+    transform: rotate(10deg);
+}
+
+.services-container {
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    background-color: var(--green);
+    border-radius: 100px;
+    margin: 5px;
+    box-shadow: #E4DCCE 4px 4px 0 0, #1F1A1E 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: #fff;
+    width: 100%;
+}
+
+.services-container2 {
+    padding-left: 120px;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+}
+
+/* Grid para posicionar botones */
+.services-buttons {
+    font-size: 2vh;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 50%;
+    height: 100%;
+    }
+    
+    #branding-service { grid-area: 3 / 3 / 5 / 6; }
+    #comercial-service { grid-area: 3 / 8 / 5 / 11; }
+    #musicvids-service { grid-area: 6 / 2 / 8 / 5; }
+    #foto-service { grid-area: 6 / 7 / 8 / 10; }
+    #digitalmedia-service { grid-area: 9 / 5 / 11 / 8; }
+
+
+/* Estilos de botones */
+.services-buttons-btn,
+.services-buttons-btn2 {
+    padding: 35px;
+    background-color: #D58936;
+    border: 2px solid #1F1A1E;
+    box-shadow: #1F1A1E 4px 4px 0 1px;
+    border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.5s ease;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 200px;
+}
+
+/* Hover de los botones */
+.services-buttons-btn:hover {
+    transform: rotate(10deg);
+}
+
+.services-buttons-btn2:hover {
+    transform: rotate(-10deg);
+}
+
+/* Texto dentro del contenedor de servicios */
+.services-text-container {
+    padding-right: 250px;
+    color: #e4dcce;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-text {
+    font-size: 6rem;
+    color: #f9e1b8;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 1250px) {
+    .main-container {
+        margin-bottom: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .main-title {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 5%;
+        padding-left: 0%;
+    }
+    .main-spline {
+        width: 1200px;
+        scale: 0.5;
+    }
+}
+
+@media (max-width: 960px) {
+    .main-title {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15%;
+        padding-left: 0%;
+    }
+
+    .main-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 0px;
+    
+    }
+
+    .main-title {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 15%;
+        padding-left: 0%;
+    }
+
+    .main-spline {
+        width: 900px;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .services-container-img{
+        margin-inline: auto;
+        width: 127px;
+        translate: 0px 60px;
+    }
+
+    .services-container-img2{
+        margin-inline: auto;
+        width: 127px;
+        translate: 0px -60px;
+    }
+
+    .services-container {
+        height: 750px;
+        background-color: var(--green);
+        border-radius: 100px;
+        margin: 5px;
+        box-shadow: #E4DCCE 4px 4px 0 0, #1F1A1E 4px 4px 0 1px;
+        box-sizing: border-box;
+        color: #fff;
+    }
+
+    .services-container2 {
+        padding: 0px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0px;
+        gap: 0px;
+    }
+
+    .services-text-container {
+        padding-right: 0px;
+        color: #e4dcce;
+        width: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .services-text {
+        margin-top: 50px;
+        padding: 0px 0px 0px 0px;
+        font-size: 4rem;
+        color: var(--white);
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    }
+}
+
+/* Responsividad para el grid */
+@media (max-width: 960px) {
+    .services-buttons {
+        padding: 0px 15px;
+        font-size: 2rem;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: 100%;
+        height: 50vh;
+        }
+        
+        #branding-service { grid-area: 3 / 3 / 5 / 6; }
+        #comercial-service { grid-area: 3 / 8 / 5 / 11; }
+        #musicvids-service { grid-area: 6 / 2 / 8 / 5; }
+        #foto-service { grid-area: 6 / 7 / 8 / 10; }
+        #digitalmedia-service { grid-area: 9 / 5 / 11 / 8; }
+        .services-buttons-btn {
+            padding: 35px 50px 35px 50px;
+            margin-bottom: 0px;
+            background-color: #D58936;
+            border: 2px solid #1F1A1E;
+            box-shadow: #1F1A1E 4px 4px 0 1px;
+            border-radius: 100px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.5s ease;
+            font-size: 1rem;
+            width: 100%;
+            max-width: 200px;
+            transform: rotate(10deg)
+        }
+        .services-buttons-btn2 {
+            padding: 35px 50px 35px 50px;
+            margin-bottom: 0px;
+            background-color: #D58936;
+            border: 2px solid #1F1A1E;
+            box-shadow: #1F1A1E 4px 4px 0 1px;
+            border-radius: 100px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.5s ease;
+            font-size: 1rem;
+            width: 100%;
+            max-width: 200px;
+            transform: rotate(-10deg)
+        }
+
+        p{
+            margin-bottom: 0px;
+        }
+        
+        /* Hover de los botones */
+        .services-buttons-btn:hover {
+            transform: rotate(-10deg);
+        }
+        
+        .services-buttons-btn2:hover {
+            transform: rotate(10deg);
+        }
+
+    }
+
+
+@media (max-width: 600px) {
+    .services-buttons {
+        scale: 0.9;
+        margin: 15px 15px;
+        font-size: 1rem;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: 97%;
+        height: 50vh;
+        margin-inline: auto;
+        }
+        
+        #branding-service { grid-area: 3 / 3 / 5 / 6; }
+        #comercial-service { grid-area: 3 / 8 / 5 / 11; }
+        #musicvids-service { grid-area: 6 / 2 / 8 / 5; }
+        #foto-service { grid-area: 6 / 7 / 8 / 10; }
+        #digitalmedia-service { grid-area: 9 / 5 / 11 / 8; }
+
+
+.services-buttons-btn {
+    padding: 35px 60px 35px 60px;
+    background-color: #D58936;
+    border: 2px solid #1F1A1E;
+    box-shadow: #1F1A1E 4px 4px 0 1px;
+    border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.5s ease;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 200px;
+    transform: rotate(10deg)
+}
+.services-buttons-btn2 {
+    padding: 35px 60px 35px 60px;
+    background-color: #D58936;
+    border: 2px solid #1F1A1E;
+    box-shadow: #1F1A1E 4px 4px 0 1px;
+    border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.5s ease;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 200px;
+    transform: rotate(-10deg)
+}
+
+p{
+    margin-bottom: 0px;
+}
+
+/* Hover de los botones */
+.services-buttons-btn:hover {
+    transform: rotate(-10deg);
+}
+
+.services-buttons-btn2:hover {
+    transform: rotate(10deg);
+}
+}
