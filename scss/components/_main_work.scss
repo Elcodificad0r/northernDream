@@ -34,7 +34,7 @@
 .work-main-services-text {
     position: absolute;
     top: 55%;
-    left: 20%;
+    left: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,36 +42,38 @@
     z-index: 2; /* Asegura que el texto esté por encima de los videos */
   }
   
-  h2 {
+  .work-main-services-text-1 {
     position: absolute;
     width: 100%;
     text-align: center;
+    display: flex;
+    justify-content: center;
     opacity: 0; /* Comienza oculto */
     animation: fadeInOut 30s infinite; /* Ciclo total de la animación */
     transition: opacity 0.2s ease-in-out;
 }
 
-h2:nth-child(1) {
+.work-main-services-text-1:nth-child(1) {
     color: var(--green); /* El color de los textos */
   animation-delay: 0s;  /* Primer texto */
 }
 
-h2:nth-child(2) {
-    color: var(--orange);
+.work-main-services-text-1:nth-child(2) {
+    color: rgb(255, 187, 0);
   animation-delay: 6s;  /* Segundo texto */
 }
 
-h2:nth-child(3) {
+.work-main-services-text-1:nth-child(3) {
     color: rgb(255, 55, 0);
   animation-delay: 12s; /* Tercer texto */
 }
 
-h2:nth-child(4) {
-    color: rgb(0, 179, 255);
+.work-main-services-text-1:nth-child(4) {
+    color: rgb(0, 100, 251);
   animation-delay: 18s; /* Cuarto texto */
 }
 
-h2:nth-child(5) {
+.work-main-services-text-1:nth-child(5) {
     color: rgb(209, 0, 105);
     animation-delay: 24s; /* Quinto texto */
 }
@@ -104,15 +106,51 @@ h2:nth-child(5) {
         width: 100%;
     }
 
-    h2:nth-child(4) {
+    .work-main-services-text-1:nth-child(4) {
         scale: 0.8;
-        left: -17px;
+        // left: -17px;
     }
 
-    h2:nth-child(5) {
+    .work-main-services-text-1:nth-child(5) {
         scale: 0.8;
-        left: -17px;
+        // left: -17px;
     }
 
 
+}
+
+@media (max-width: 600px) {
+
+    .work-main-container{
+        translate: 0px -15px;
+    }
+
+    .work-main-services-text{
+        position: absolute;
+        margin-inline: auto;
+        scale: 0.9;
+        top: 66%;
+        left: 0%;
+        width: 100%;
+    }
+
+    
+}
+
+@media (max-width: 320px) {
+
+    .work-main-container{
+        translate: 0px -15px;
+    }
+
+    .work-main-services-text{
+        position: absolute;
+        margin-inline: auto;
+        scale: 0.6;
+        top: 66%;
+        left: 0%;
+        width: 100%;
+    }
+
+    
 }

@@ -43,8 +43,10 @@ spline-viewer {
 }
 
 .services-container-img2{
-    translate: 1090px -60px;
+    translate: 0px -60px;
     transform: rotate(10deg);
+    position: relative;
+    left: 90%;
 }
 
 .services-container {
@@ -214,6 +216,7 @@ spline-viewer {
         margin-inline: auto;
         width: 127px;
         translate: 0px -60px;
+        left: 0%;
     }
 
     .services-container {
@@ -409,4 +412,5 @@ p{
 .services-buttons-btn2:hover {
     transform: rotate(10deg);
 }
+
 }
