@@ -139,7 +139,7 @@ p, body {
 }
 
 .header {
-  background-color: var(--white);
+  background-color: transparent;
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 400;
@@ -261,6 +261,8 @@ a:hover {
 
 @media (max-width: 43.74875em) {
   .header {
+    position: relative;
+    z-index: 2;
     padding: 32px 16px 32px 16px;
   }
   .navbar-nav {
@@ -1341,7 +1343,7 @@ footer span {
   height: 100%;
   display: flex;
   justify-content: space-around;
-  z-index: 1;
+  z-index: -1;
 }
 .work-main-container div {
   z-index: -1;
@@ -1453,8 +1455,12 @@ footer span {
     position: absolute;
     margin-inline: auto;
     scale: 0.9;
-    top: 66%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: -50px;
     left: 0%;
+    height: 100%;
     width: 100%;
   }
 }
@@ -1479,12 +1485,13 @@ footer span {
 .bg-z-index-sun {
   position: fixed;
   width: 100%;
-  scale: 1.1;
+  height: 100%;
+  scale: 1;
   translate: 0px -80px;
   z-index: -1;
 }
 
 .about-main-container {
-  padding: 10rem 40rem;
+  margin: 10% 30%;
   z-index: 2;
 }/*# sourceMappingURL=styles.css.map */

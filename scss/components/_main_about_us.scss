@@ -8,13 +8,14 @@
 .bg-z-index-sun{
     position: fixed;
     width: 100%;
-    scale: 1.1;
+    height: 100%;
+    scale: 1;
     translate: 0px -80px;
     z-index: -1;
 }
 
 .about-main-container{
-    padding: 10rem 40rem;
+    margin: 10% 30%;
     z-index: 2;
 }
 
