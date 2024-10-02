@@ -241,6 +241,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   gap: 0px;
+  z-index: 2;
 }
 .offcanvas-body ul li {
   list-style: none;
@@ -914,7 +915,7 @@ footer span {
     margin: 40px 0px;
   }
   .black-footer {
-    height: 70vh;
+    height: 102vh;
   }
   .black-footer div ul {
     margin: 25px 0px;
@@ -1247,18 +1248,26 @@ footer span {
   .form-floating {
     display: flex;
     justify-content: center;
+    z-index: 1;
   }
   #floatingInput2 {
     width: 13rem;
+    z-index: 1;
   }
   #text-form {
     display: flex;
     justify-content: center;
     margin-left: 50px;
+    z-index: 1;
   }
   .contact-main-submit {
     padding-top: 20px;
     width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  #contact-main-submit-button {
+    scale: 0.8;
   }
 }
 .work-main-container {
@@ -1386,6 +1395,7 @@ footer span {
     left: 0%;
     height: 100%;
     width: 100%;
+    z-index: 1;
   }
 }
 @media (max-width: 320px) {

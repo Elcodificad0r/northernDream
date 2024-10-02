@@ -291,6 +291,7 @@
         border-radius: 50px;
         width: 300px;
         padding-left: 10px;
+       
     }
 
     .contact-main-form-emptybox{
@@ -307,17 +308,20 @@
     .form-floating{
         display: flex;
         justify-content: center;
+        z-index: 1;
     }
 
 
     #floatingInput2{
         width: 13rem;
+        z-index: 1;
     }
     
     #text-form{
         display: flex;
         justify-content: center;
         margin-left: 50px;
+        z-index: 1;
     }
 
     .contact-main-submit{
@@ -326,4 +330,11 @@
     
     }
 
+}
+
+@media (max-width: 320px){
+    #contact-main-submit-button{
+        scale: .8;
+    
+    }
 }

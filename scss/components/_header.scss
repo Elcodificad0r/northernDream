@@ -123,6 +123,7 @@ a:hover {
         flex-direction: column;
         justify-content: center;
         gap: 0px;
+        z-index: 2;
 
         li{
             list-style: none;
