@@ -33,6 +33,7 @@ header {
             gap: 31px;
             align-self: center;
             padding-right: 40px;
+            text-align: right;
 
             li{
                 list-style: none;
@@ -104,6 +105,7 @@ a:hover {
         text-decoration: none;
         margin: 10px 0;
         text-align: center;
+        word-wrap:break-word;
     }
 }
 
@@ -203,107 +205,3 @@ a:hover {
     
 }
 
-// header transparent
-
-.header-transparent{
-    position: relative;
-    background-color: transparent;
-    font-size: 1rem;
-    line-height: 1.5;
-    font-weight: 400;
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 65px 0px 65px;
-    z-index: 2;
-
-    &__wrapper{
-        width: min(100% - u.rem(32), u.rem(1327)); max-width: (u.rem(2450));
-        margin-inline: auto;
-
-    }
-}
-
-.header-transparent {
-    nav {
-        display: flex;
-        justify-content: space-between;
-        filter:invert(1);
-        mix-blend-mode: difference;
-        ul{
-            display: flex;
-            justify-content: space-evenly;
-            gap: 31px;
-            align-self: center;
-            padding-right: 40px;
-
-            li{
-                list-style: none;
-
-                a{
-                    text-decoration: none;
-                    color: var(--black);
-                    font-weight: bold;
-                        
-                }
-
-                a:hover {
-                    color: var(--orange);
-                }
-            }
-        }
-    }
-} 
-
-// media query 699 px
-
-@include u.breakpoint-down(small) {
-    .header-transparent{
-        padding: 32px 16px 32px 16px;
-    }
-
-    .navbar-nav{
-        padding: 0;
-    }
-
-    .btn-close-large{
-        height: 2rem;
-        width: 2rem;
-        background-size: 1.5rem;
-    }
-
-    .offcanvas-body {
-        a {
-            font-size: 4rem; 
-        }
-    }
-
-    .nav-buttons {
-        display: none; 
-    }
-
-    .nav-socials  {
-        a {
-            display: none;
-        }
-    }
-
-    .hamburger {
-        display: block; 
-        cursor: pointer;
-        align-self: center;
-    }
-
-    .btn-close-large{
-        height: 2rem;
-        width: 2rem;
-        background-size: 1.5rem;
-    }
-
-   
-    .offcanvas-body {
-        ul {
-            justify-content: center;
-            align-items: center;
-        }
-    }
-}
