@@ -1,0 +1,21 @@
+@use '../util/functions' as u;
+
+// services buttons from index page
+
+@mixin services-button($padding: 35px 60px, $bg-color: #D58936, $border-color: #1F1A1E, $box-shadow-color: #1F1A1E, $border-radius: 100px, $transition: 0.5s) {
+    padding: $padding;
+    background-color: $bg-color;
+    border: 2px solid $border-color;
+    box-shadow: $box-shadow-color 4px 4px 0 1px;
+    border-radius: $border-radius;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform $transition ease;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 200px;
+  }
+

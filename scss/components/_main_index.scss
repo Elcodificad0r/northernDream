@@ -1,4 +1,5 @@
 @use '../util' as u;
+@import '../global/buttons';
 
 // first section
 .main{
@@ -98,20 +99,7 @@ spline-viewer {
 /* Estilos de botones */
 .services-buttons-btn,
 .services-buttons-btn2 {
-    padding: 35px;
-    background-color: #D58936;
-    border: 2px solid #1F1A1E;
-    box-shadow: #1F1A1E 4px 4px 0 1px;
-    border-radius: 100px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transition: transform 0.5s ease;
-    font-size: 1rem;
-    width: 100%;
-    max-width: 200px;
+    @include services-button();
 }
 
 /* Hover de los botones */
@@ -287,39 +275,11 @@ spline-viewer {
         #foto-service { grid-area: 6 / 7 / 8 / 10; }
         #digitalmedia-service { grid-area: 9 / 5 / 11 / 8; }
         .services-buttons-btn {
-            padding: 35px 50px 35px 50px;
-            margin-bottom: 0px;
-            background-color: #D58936;
-            border: 2px solid #1F1A1E;
-            box-shadow: #1F1A1E 4px 4px 0 1px;
-            border-radius: 100px;
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            transition: transform 0.5s ease;
-            font-size: 1rem;
-            width: 100%;
-            max-width: 200px;
+            @include services-button();
             transform: rotate(10deg)
         }
         .services-buttons-btn2 {
-            padding: 35px 50px 35px 50px;
-            margin-bottom: 0px;
-            background-color: #D58936;
-            border: 2px solid #1F1A1E;
-            box-shadow: #1F1A1E 4px 4px 0 1px;
-            border-radius: 100px;
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            transition: transform 0.5s ease;
-            font-size: 1rem;
-            width: 100%;
-            max-width: 200px;
+            @include services-button();
             transform: rotate(-10deg)
         }
 
@@ -366,37 +326,11 @@ spline-viewer {
 
 
 .services-buttons-btn {
-    padding: 35px 60px 35px 60px;
-    background-color: #D58936;
-    border: 2px solid #1F1A1E;
-    box-shadow: #1F1A1E 4px 4px 0 1px;
-    border-radius: 100px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transition: transform 0.5s ease;
-    font-size: 1rem;
-    width: 100%;
-    max-width: 200px;
+    @include services-button();
     transform: rotate(10deg)
 }
 .services-buttons-btn2 {
-    padding: 35px 60px 35px 60px;
-    background-color: #D58936;
-    border: 2px solid #1F1A1E;
-    box-shadow: #1F1A1E 4px 4px 0 1px;
-    border-radius: 100px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transition: transform 0.5s ease;
-    font-size: 1rem;
-    width: 100%;
-    max-width: 200px;
+    @include services-button();
     transform: rotate(-10deg)
 }
 

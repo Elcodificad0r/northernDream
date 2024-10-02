@@ -35,3 +35,11 @@ p, body{
     font-style: normal;
     font-weight: 400;
 }
+
+#faq-text-h1{
+    font-size: 4rem ;
+    font-family: 'Pixelify Sans';
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(u.rem(86), 3.45rem + 12.75vw, u.rem(300));
+}

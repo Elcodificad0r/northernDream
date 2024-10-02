@@ -138,6 +138,14 @@ p, body {
   font-weight: 400;
 }
 
+#faq-text-h1 {
+  font-size: 4rem;
+  font-family: "Pixelify Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(5.375rem, 3.45rem + 12.75vw, 18.75rem);
+}
+
 .header {
   background-color: transparent;
   font-size: 1rem;
@@ -405,7 +413,7 @@ spline-viewer {
 /* Estilos de botones */
 .services-buttons-btn,
 .services-buttons-btn2 {
-  padding: 35px;
+  padding: 35px 60px;
   background-color: #D58936;
   border: 2px solid #1F1A1E;
   box-shadow: #1F1A1E 4px 4px 0 1px;
@@ -589,8 +597,7 @@ spline-viewer {
     grid-area: 9/5/11/8;
   }
   .services-buttons-btn {
-    padding: 35px 50px 35px 50px;
-    margin-bottom: 0px;
+    padding: 35px 60px;
     background-color: #D58936;
     border: 2px solid #1F1A1E;
     box-shadow: #1F1A1E 4px 4px 0 1px;
@@ -607,8 +614,7 @@ spline-viewer {
     transform: rotate(10deg);
   }
   .services-buttons-btn2 {
-    padding: 35px 50px 35px 50px;
-    margin-bottom: 0px;
+    padding: 35px 60px;
     background-color: #D58936;
     border: 2px solid #1F1A1E;
     box-shadow: #1F1A1E 4px 4px 0 1px;
@@ -669,7 +675,7 @@ spline-viewer {
     grid-area: 9/5/11/8;
   }
   .services-buttons-btn {
-    padding: 35px 60px 35px 60px;
+    padding: 35px 60px;
     background-color: #D58936;
     border: 2px solid #1F1A1E;
     box-shadow: #1F1A1E 4px 4px 0 1px;
@@ -686,7 +692,7 @@ spline-viewer {
     transform: rotate(10deg);
   }
   .services-buttons-btn2 {
-    padding: 35px 60px 35px 60px;
+    padding: 35px 60px;
     background-color: #D58936;
     border: 2px solid #1F1A1E;
     box-shadow: #1F1A1E 4px 4px 0 1px;
@@ -1528,5 +1534,128 @@ footer span {
     z-index: -1;
     position: fixed;
     translate: -850px;
+  }
+}
+.faq-section {
+  width: 100%;
+  display: flex;
+}
+
+#faq-text-h1 {
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#accordionFlushExample {
+  background-color: transparent;
+  margin: 0px 10%;
+}
+
+.accordion-button {
+  background-color: transparent;
+  font-family: "montserrat", Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 0.8;
+  font-size: clamp(4.375rem, 0.6985294118rem + 9.8039215686vw, 7.5rem);
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: var(--green);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: var(--black);
+}
+
+.accordion-item {
+  background-color: transparent;
+  border: none;
+}
+
+.accordion-body {
+  background-color: transparent;
+  color: var(--black); /* Color del texto del contenido */
+  border-top: none;
+  padding: 60px 60px;
+  margin: 50px 0px;
+  background-color: #cacaca;
+  border: 2px solid #1F1A1E;
+  box-shadow: var(--orange) 15px 20px 1px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.accordion-header {
+  background-color: transparent;
+}
+
+/* padding entre los items */
+.accordion-button, .accordion-body {
+  padding: 0;
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  display: none;
+}
+
+.accordion-question {
+  background-color: gray;
+  border-radius: 25px;
+  margin-left: 20px;
+  padding: 30px 30px;
+  width: 20%;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.accordion-main-text {
+  text-align: justify;
+  font-size: 1rem;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Pixelify Sans";
+  font-style: normal;
+  font-weight: 400;
+  width: 60%;
+}
+
+.accordion-img {
+  translate: 0px 20px;
+}
+
+@media (max-width: 768px) {
+  .accordion-main-text {
+    margin: 0px 20px;
+  }
+}
+@media (max-width: 576px) {
+  .accordion-body {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #accordion-naming-tag {
+    font-size: 2.7rem;
+    display: flex;
+    justify-content: center;
+  }
+  .accordion-question {
+    width: 85%;
+    margin: 30px;
   }
 }/*# sourceMappingURL=styles.css.map */
