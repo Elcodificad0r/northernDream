@@ -79,10 +79,11 @@
         border-radius: 25px;
     }
 
-    @media (width: 2000px){
+    @media (width: 2560px){
         .bg-z-index-sun{
-            translate: 240px 0px;
             scale: 2;
+            margin-top: 290px;
+            margin-left: 1300px;
         }
     }
 

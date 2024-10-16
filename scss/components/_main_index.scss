@@ -38,13 +38,17 @@ spline-viewer {
 
 /* Sección de servicios */
 
+.second-section{
+    width: 100%;
+}
+
 .services-container-img{
     translate: 70px 60px;
     transform: rotate(-10deg);
 }
 
 .services-container-img2{
-    translate: 0px -60px;
+    translate: -37px -60px;
     transform: rotate(10deg);
     position: relative;
     left: 90%;
@@ -60,7 +64,7 @@ spline-viewer {
     box-shadow: #E4DCCE 4px 4px 0 0, #1F1A1E 4px 4px 0 1px;
     box-sizing: border-box;
     color: #fff;
-    width: 100%;
+    width: 99%;
 }
 
 .services-container2 {
@@ -134,6 +138,7 @@ spline-viewer {
 
 
 /* Media Queries */
+
 @media (max-width: 1250px) {
     .main-container {
         margin-bottom: 200px;

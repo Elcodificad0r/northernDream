@@ -1,5 +1,9 @@
 @use '../util' as u;
 
+html,body{
+    overflow-x: hidden;
+}
+
 * {
     box-sizing: border-box;
 }
