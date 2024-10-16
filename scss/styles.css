@@ -1,5 +1,5 @@
 @charset "UTF-8";
-html, body {
+html {
   overflow-x: hidden;
 }
 
@@ -12,6 +12,7 @@ body {
   margin: 0;
   height: 100%;
   background-color: var(--white);
+  overflow-x: hidden;
 }
 
 h1,
