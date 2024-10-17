@@ -14,7 +14,13 @@ body {
     height: 100%;
     background-color: var(--white);
     overflow-x: hidden;
+    overflow: auto;
+    scrollbar-width: none; /* Para Firefox */
 }
+
+body::-webkit-scrollbar {
+    display: none; /* Para Chrome, Safari y Edge */
+  }
 
 h1,
 h2,
