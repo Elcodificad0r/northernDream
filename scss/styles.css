@@ -56,7 +56,7 @@ button {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/poppins-v21-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/poppins-v21-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* poppins-italic - latin */
 @font-face {
@@ -64,7 +64,7 @@ button {
   font-family: "Poppins";
   font-style: italic;
   font-weight: 400;
-  src: url("../../fonts/poppins-v21-latin-italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/poppins-v21-latin-italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* montserrat-regular - latin */
 @font-face {
@@ -72,7 +72,7 @@ button {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/montserrat-v26-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/montserrat-v26-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* montserrat-800italic - latin */
 @font-face {
@@ -80,7 +80,7 @@ button {
   font-family: "Montserrat";
   font-style: italic;
   font-weight: 800;
-  src: url("../../fonts/montserrat-v26-latin-800italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/montserrat-v26-latin-800italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* montserrat-900italic - latin */
 @font-face {
@@ -88,7 +88,7 @@ button {
   font-family: "Montserrat";
   font-style: italic;
   font-weight: 900;
-  src: url("../../fonts/montserrat-v26-latin-900italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/montserrat-v26-latin-900italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* unna-italic - latin */
 @font-face {
@@ -96,7 +96,7 @@ button {
   font-family: "Unna";
   font-style: italic;
   font-weight: 400;
-  src: url("../../fonts/unna-v23-latin-italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/unna-v23-latin-italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* pixelify-sans-regular - latin */
 @font-face {
@@ -104,7 +104,7 @@ button {
   font-family: "Pixelify Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/pixelify-sans-v1-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/pixelify-sans-v1-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 :root {
   --orange: hsl(31,65%,53%);
